@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #ff69b4;
+    /* Light Pink */
+}
+
+.vip-section {
+    max-width: 100%;
+    padding: 30px 20px;
+}
+
+.vip-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #ff69b4;
+}
+
+.vip-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+}
+
+.vip-plan {
+    min-width: 260px;
+    flex: 0 0 auto;
+    background-color: #1e1e1e;
+    border-left: 5px solid #ff69b4;
+    border-radius: 12px;
+    padding: 20px;
+    scroll-snap-align: start;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vip-plan:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(255, 105, 180, 0.3);
+}
+
+.vip-plan h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: #ff69b4;
+}
+
+.vip-plan p {
+    color: #f8b9d4;
+    font-size: 0.95rem;
+}
+
+.price {
+    font-size: 1.1rem;
+    color: #ff1493;
+    /* Deep Pink */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.vip-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.vip-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
